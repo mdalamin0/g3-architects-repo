@@ -1,0 +1,160 @@
+/*------------------
+ Reset and common css code
+------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    max-width: 1920px;
+    margin: auto;
+    width: 100%;
+}
+.btn {
+    border: 0;
+    width: 180px;
+    height: 55px;
+    font-weight: 600;
+    font-size: 20px;
+    background: #FF900E;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover{
+    background: #ca7e26;
+}
+ul li{
+    list-style: none;
+    font-size: 18px;
+}
+ul li a:hover{
+    color: #727272;
+}
+a{
+    text-decoration: none;
+}
+.btn-color{
+    
+    color: white;
+    font-weight: 700;
+}
+.description-text{
+    color: #727272;
+}
+
+/* -----------------------
+   Header section css code
+--------------------------- */
+.header-section {
+    padding: 3vw 15vw;
+    background: rgba(255, 144, 14, 0.1);
+}
+.header-top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-right-side-menu{
+    display: flex;
+    gap: 30px;
+}
+ul li a{
+    color: #424242;
+}
+.header-middle-section-title {
+    font-size: 10vh;
+}
+.header-middle-section {
+    text-align: center;
+    padding: 5vh 0vh;
+}
+.middle-section-text {
+    margin: 5vh 0 5vh 0;
+}
+/* header-banner css code */
+.banner-img {
+    width: 100%;
+}
+
+/* Main section css code */
+
+.single-color{
+    color: #FF900E;
+}
+.main-section-top {
+    padding: 10vh 50vh;
+}
+.main-section-top {
+    padding: 10vh 30vh;
+    display: flex;
+    align-items: center;
+    gap: 10vh;
+}
+.main-section-top-text {
+    margin: 25px 0;
+}
+.main-section-top-left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+.main-section-top-left-img img{
+    width: 100%;
+}
+
+/* small device css code */
+
+@media screen and (max-width: 576px) {
+    .header-top-section {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .header-right-side-menu {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 4vh;
+    }
+    .header-middle-section-title {
+        font-size: 10vw;
+        padding: 5vh 0vh;
+    }
+    .description-text.middle-section-text {
+        margin: 2vh 0 2vh 0;
+    }
+    /* Main section responsive css code */
+    
+    .main-section-top {
+        display: grid;
+        justify-content: center;
+        padding: 15px;
+    }
+    .main-section-top-left {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* meadian device css code */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .header-middle-section-title {
+        font-size: 10vw;
+    }
+    /* Main section responsive css code */
+
+    .main-section-top {
+        padding: 5vh 12vh;
+    }
+    .main-section-top {
+        padding: 10vw;
+        gap: 6vw;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
