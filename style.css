@@ -11,7 +11,6 @@ body{
 .container{
     max-width: 1440px;
     margin: auto;
-    /* width: 100%; */
 }
 .btn {
     border: 0;
@@ -130,7 +129,6 @@ ul li a{
     box-shadow: rgb(17 17 26 / 10%) 0px 0px 16px;
     margin-bottom: 10px;
     height: 100px;
-    /* overflow: hidden; */
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -196,8 +194,37 @@ ul li a{
 img.icon {
     margin-top: 20px;
 }
-.hide{
-    display: none;
+
+/* sponspors css code */
+.sponspors {
+    margin-bottom: 120px;
+}
+.sponspors-bottom-part{
+    display: flex;
+}
+.sponspors-top-part {
+    text-align: center;
+}
+.sopnspors-title {
+    font-size: 45px;
+}
+.sopnspors-text {
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+.sponspors-bottom-part {
+    display: flex;
+    justify-content: space-around;
+}
+.sponspors-bottom-info{
+    filter: grayscale(100%);
+}
+.footer {
+    text-align: center;
+    background: #FFF4E7;
+    padding: 38px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 /* small device css code */
 
@@ -250,8 +277,13 @@ img.icon {
     .experience-details {
         row-gap: 28px;
     }
+    .sponspors-bottom-part {
+        display: grid;
+        row-gap: 20px;
+    }
+    }
     
-}
+
 
 /* meadian device css code */
 
@@ -281,10 +313,12 @@ img.icon {
         padding: 0 110px;
     }
     .experience-details {
-        /* display: flex; */
         row-gap: 20px;
-        /* flex-wrap: wrap;
-        justify-content: space-around; */
     }
-    
+    .sponspors-bottom-part {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        justify-items: center;
+    }
 }
