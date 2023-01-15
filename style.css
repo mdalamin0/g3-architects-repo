@@ -114,6 +114,9 @@ ul li a{
     align-items: center;
     gap: 30px;
 }
+.main-section-second-right {
+    position: relative;
+}
 .main-section-second-title {
     font-size: 45px;
     border-left: 3px solid #FF900E;
@@ -146,6 +149,8 @@ ul li a{
 }
 .experience-small-sections {
     margin-bottom: 70px;
+    bottom: -100px;
+    left: -23px;
 }
 .experience-small-section {
     text-align: center;
@@ -157,6 +162,13 @@ ul li a{
     transition: .4s;
     margin-bottom: 70px;
     margin: auto;
+}
+.experience-small-sections {
+    position: absolute;
+    bottom: -100px
+px
+;
+    left: -23px;
 }
 .experience-small-section:hover {
     background-color: #3c3227;
@@ -299,6 +311,7 @@ img.icon {
     }
     .main-section-second-title {
         font-size: 38px;
+        margin-top: 20px;
     }
     .main-section-third {
         padding: 0 25px;
@@ -320,6 +333,11 @@ img.icon {
     }
     .m-s-s-articl-text{
         white-space: normal;
+    }
+    .experience-small-sections {
+        position: absolute;
+        bottom: -100px;
+        left: 0px;
     }
     /* Our succesfull design part */
     .our-design-system {
@@ -367,6 +385,9 @@ img.icon {
         padding: 30px 50px;
         align-items: center;
         flex-direction: column-reverse;
+    }
+    .main-section-second-title{
+        margin-top: 25px;
     }
     .main-section-third {
         padding: 0 110px;
