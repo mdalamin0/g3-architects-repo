@@ -219,6 +219,30 @@ img.icon {
 .sponspors-bottom-info{
     filter: grayscale(100%);
 }
+/* succesfull design */
+.our-design-system {
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    gap: 10px;
+}
+.our-design-system-left {
+    width: 40%;
+}
+.our-design-system-right {
+    width: 60%;
+}
+.design-system-title {
+    font-size: 45px;
+}
+.our-design-system-right img {
+    width: 100%;
+}
+.our-design-system-right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
 .footer {
     text-align: center;
     background: #FFF4E7;
@@ -226,7 +250,9 @@ img.icon {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-/* small device css code */
+/*-----------------------
+ small device css code 
+ --------------------------*/
 
 @media screen and (max-width: 576px) {
     .header-top-section {
@@ -281,6 +307,36 @@ img.icon {
         display: grid;
         row-gap: 20px;
     }
+    .main-section-second-article {
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: rgb(17 17 26 / 10%) 0px 0px 16px;
+        margin-bottom: 10px;
+        height: 100px;
+        overflow-y: scroll;
+    }
+    .m-s-s-articl-text{
+        white-space: normal;
+    }
+    /* Our succesfull design part */
+    .our-design-system {
+        display: flex;
+        align-items: center;
+        padding: 20px 15px;
+        flex-direction: column;
+    }
+    .our-design-system-right {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+    .our-design-system-left {
+        width: 100%;
+    }
+    .our-design-system-right {
+        width: 100%;
+        margin-top: 25px;
+    }
     }
     
 
@@ -320,5 +376,24 @@ img.icon {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 20px;
         justify-items: center;
+    }
+    /* our succesfull design-code */
+    .our-design-system-left {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .our-design-system-right {
+        width: 100%;
+    }
+    .our-design-system {
+        display: flex;
+        align-items: center;
+        padding: 20px 15px;
+        flex-direction: column;
+    }
+    .our-design-system-right {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
     }
 }
